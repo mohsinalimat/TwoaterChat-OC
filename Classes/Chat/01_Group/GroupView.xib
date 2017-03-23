@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GroupView">
+            <connections>
+                <outlet property="cellDetails" destination="CgD-am-czd" id="LIO-r0-arB"/>
+                <outlet property="cellMedia" destination="lT3-JP-d98" id="TRP-0m-s3Z"/>
+                <outlet property="imageGroup" destination="h95-io-rRV" id="fvJ-dC-S0c"/>
+                <outlet property="labelName" destination="1ej-XA-OMo" id="Gfs-Ti-PDc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" style="grouped" separatorStyle="default" rowHeight="50" sectionHeaderHeight="5" sectionFooterHeight="5" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+            </connections>
+        </tableView>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CgD-am-czd">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CgD-am-czd" id="liN-wy-7qj">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="h95-io-rRV">
+                        <rect key="frame" x="10" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Nm1-D1-keY"/>
+                            <constraint firstAttribute="width" constant="40" id="f4h-oq-2Vq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ej-XA-OMo">
+                        <rect key="frame" x="60" y="0.0" width="250" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1ej-XA-OMo" firstAttribute="leading" secondItem="liN-wy-7qj" secondAttribute="leadingMargin" constant="52" id="GSC-AI-KmS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1ej-XA-OMo" secondAttribute="bottom" constant="-9" id="Knx-nX-0iv"/>
+                    <constraint firstItem="h95-io-rRV" firstAttribute="top" secondItem="liN-wy-7qj" secondAttribute="topMargin" constant="-3" id="TdP-Kn-Yu0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1ej-XA-OMo" secondAttribute="trailing" constant="2" id="aut-5u-wbw"/>
+                    <constraint firstItem="1ej-XA-OMo" firstAttribute="top" secondItem="liN-wy-7qj" secondAttribute="topMargin" constant="-8" id="h9l-qq-wo9"/>
+                    <constraint firstItem="h95-io-rRV" firstAttribute="leading" secondItem="liN-wy-7qj" secondAttribute="leadingMargin" constant="2" id="j6c-k4-4nn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="245" y="119"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ZgI-Xp-BM3" style="IBUITableViewCellStyleDefault" id="lT3-JP-d98">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lT3-JP-d98" id="pVJ-wr-DBy">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="All Media" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZgI-Xp-BM3">
+                        <rect key="frame" x="15" y="0.0" width="290" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="415" y="900"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="group_blank.png" width="40" height="40"/>
+    </resources>
+</document>
